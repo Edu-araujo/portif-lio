@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang"pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content "devde-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+        <title>Edu in Tech</title> 
+        <base a href="www.edu_in_tech.com">
+        <link rel="shortcut icon" type="imagex/png" href="./img/conecte-se.ico">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script>
+            /* Função Validar */
+function validar() {
+    // pegando o valor do nome pelos names
+    var nome = document.getElementById("nome");
+    var sobrenome = document.getElementById("sobrenome");
+    var email = document.getElementById("email");
+    var telefone = document.getElementById("telefone");
+    var cep = document.getElementById("cep");
+    var sexo = document.getElementById("sexo");
+    var newsletter = document.getElementById("newsletter").checked;
+  
+    // verificar se o nome está vazio
+    if (nome.value == "") {
+      alert("Nome não informado");
+  
+      // Deixa o input com o focus
+      nome.focus();
+      // retorna a função e não olha as outras linhas
+      return;
+    }
+    if (sobrenome.value == "") {
+      alert("Sobrenome não informado");
+      sobrenome.focus();
+      return;
+    }
+    if (email.value == "") {
+      alert("E-mail não informado");
+      email.focus();
+      return;
+    }
+   
+    if (telefone.value == "") {
+      alert("Telefone não informado");
+      telefone.focus();
+      return;
+    }
+    if (cep.value == "") {
+      alert("CEP não informado");
+      cep.focus();
+      return;
+    }
+    if (sexo.value == "") {
+      alert("CEP não informado");
+      sexo.focus();
+      return;
+    }
+    alert("Formulário enviado!");
+    // envia o formulário
+    //formulario.submit();
+  }
+        </script>
+    </head>
+
+    <body>
+        <header class="menu-principal">
+            <main> 
+                <div class="header-1">
+
+                    <div class = "logo">
+                        <img src="./img/logo2.png"/>
+                    </div>
+
+                    <div class="redes-sociais">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/eduardo-d-araujo/">
+                                    <img src="./img/linkedind.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Dudu_du_e_Edu">
+                                    <img src="./img/redes sociais2.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/eduardo.araujosantos.3">
+                                    <img src="./img/redes sociais3.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="hhttps://www.instagram.com/edu_in_tech/">
+                                    <img src="./img/instagram.png"/>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div> 
+            </main>   
+        </header>
+       
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Linguagens</a></li>
+                    <li class="nav__item"><a href="#library" class="nav__link">Bibliotecas</a></li>
+                    <li class="nav__item"><a href="#books" class="nav__link">Livros</a></li>
+                    <li class="nav__item"><a href="#games" class="nav__link">Games</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+      
+        
+<main class="l-main">
+     <!--===== HOME =====-->
+     <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <span class="home__title">Olá! <br> Sou o <span class="home__title home__title-color">Eduardo de Araújo</span></span>
+            <p>Full Stacker Developer e estudante de <br> Análise e Desenvolvimento ed Sistemas</p>
+            <a href="#contact" class="button">Contatate-me</a>
+        </div>
+
+       <div class="home__img">    
+            <img src="./img/banner43.png" alt="ERROR: imagem nao encontrada!">
+        </div>
+    </section>
+
+
+       <!-----ABOUT----->
+        <section class="about section " id="about">
+            <h2 class="section-title">Sobre</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="./img/foto copiar.jpg" alt="ERROR: Imagem nao encontrada!">
+                </div>
+
+             <div >
+
+        <div>
+        <p class="about__text">
+                Sou o <strong>Eduardo de Aráujo</strong>! Tenho 22 anos e 
+                sou estudante do 4º periodo do Curso de 
+                <strong>Análise e Desenvolvimento de Sistemas</strong> no <strong>IFRO</strong> Campus Ji-Paraná - RO.
+                <br>
+                Sou uma pessoa criativo, resiliente, focado, determinado. 
+                Trabalho muito bem em grupo, não tenho problemas em pedir ajuda, pois estou
+                <strong>focado em aprender e a melhorar sempre!</strong>
+        </p>
+        </div>
+         </section>
+
+        <!-----SKILLS----->
+        <section class="skills section" id="skills">
+            <h2 class="section-title"><strong>Linguagens</strong></h2>
+
+            <div class="skills__container bd-grid">          
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__js">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__html">
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            
+                            <span class="skills__name">Java</span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__java">
+                        </div>
+                        <div>
+                            <span class="skills__percentage">10%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Angular Js
+                            </span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__angular">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>   
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            
+                            <span class="skills__name">Node Js
+                            </span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__node">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">10%</span>
+                        </div>
+                    </div> 
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            
+                            <span class="skills__name">CSS 3
+                            </span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__css">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                    </div>  
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">C
+                            </span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__c">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                    </div>   
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            
+                            <span class="skills__name">Python / Django
+                            </span>
+                        </div>
+                        <div class="skills_back">
+                        </div>
+                        <div class="skills__bar skills__python">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">10%</span>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact section" id="library">
+                <h2 class="section-title"><strong> Bibliotecas </strong></h2>
+                <p></p>            
+                <div class="col-3 bloco-texto">
+                    <a href="https://app.rocketseat.com.br/me/dudueduardo11-1631144863387">
+                    <img src="./img/content-3.png"/>
+                    </a>
+                    <h3>Dev</h3>
+                    <p>Atualmente estou estudando para me transformar em Desenvolvedor Full Stack.</p>
+                </div>
+                <div class="col-3 bloco-texto">  
+                    <a href="https://www.skoob.com.br/usuario/1449496-eduardo">
+                    <img src="./img/content-5.png"/>
+                    </a>
+                    <h3>Livros</h3>
+                    <p>Minha biblioteca no Skoob (rede social de leitores.).</p>
+                </div>
+                <div class="col-3 bloco-texto">
+                     <a href="https://steamcommunity.com/profiles/76561198060722748">
+                     <img src="./img/content-7.png"/>
+                     </a>
+                     <h3>Games</h3>
+                     <p>Site da minha biblioteca de jogos da Steam</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+ <!--===== Livros =====-->
+ <section class="books section" id="books">
+    <h2 class="section-title"> <strong>Livros</strong></h2>
+    <h3>Últimos livros lidos.</h3>
+    <div class="book__container bd-grid">
+        
+        <div class="book__img">
+            <img src="./img/livro1.jpg" alt="">
+        </div>
+        <div class="book__img">
+            <img src="./img/livro2.jpeg" alt="">
+        </div>
+        <div class="book__img">
+            <img src="./img/livro3.jpeg" alt="">
+        </div>
+        <div class="book__img">
+            <img src="./img/livro4.jpeg" alt="">
+        </div>
+        <div class="book__img">
+            <img src="./img/livro5.jpg" alt="">
+        </div>
+        <div class="book__img">
+            <img src="./img/livro6.jpeg" alt="">
+        </div>
+    </div>
+</section>
+
+ <!--===== GAMES =====-->
+ <section class="games section" id="games">
+    <h2 class="section-title"> <strong>Games</strong></h2>
+    <h3>Games mais jogados nesse últimos anos.</h3>
+    <div class="game__container bd-grid">
+        
+        <div class="game__img">
+            <img src="./img/game1.png" alt="https://www.ea.com/pt-br/games/fifa/fifa-21">
+        </div>
+        <div class="game__img">
+            <img src="./img/game2.jpg" alt="https://www.nintendo.com/pt_BR/games/detail/the-legend-of-zelda-breath-of-the-wild-switch/">
+        </div>
+        <div class="game__img">
+            <img src="./img/game3.jpg" alt="https://signup.br.leagueoflegends.com/pt/signup/redownload">
+        </div>
+        <div class="game__img">
+            <img src="./img/game4.jpg" alt="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">
+        </div>
+        <div class="game__img">
+            <img src="./img/game5.jpg" alt="https://store.playstation.com/pt-br/product/UP0700-CUSA02412_00-NARUTOUNS4000000/">
+        </div>
+        <div class="game__img">
+            <img src="./img/game6.jpg" alt="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR&gl=US">
+        </div>
+    </div>
+</section>
+
+
+        <!--===== CONTACT Me =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title"> <strong> Contato</strong></h2>
+            <p  style="text-align: center; margin-bottom: 2rem;">
+                Contate-me para que eu possa fazer a 
+                diferença em seus projetos.
+                 Eu sou a pessoa que falta na sua equipe!</p>
+                
+                 <div class="about__container bd-grid">
+                    <div class="contact__img">
+                        <img src="./img/contato.png" alt="ERROR: Imagem nao encontrada!">
+                    </div>
+
+                <div >
+                    
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Nome" class="contact__input">
+                        <input type="text" placeholder="Sobrenome" class="contact__input">
+                        <input type="text" placeholder="Email" class="contact__input">
+                        <input type="tel" placeholder="Telefone" class="contact__input">
+                        <input type="text" placeholder="CEP" class="contact__input">     
+                        <input type="text" placeholder="Objetivo" class="contact__input">
+                        <textarea name="" placeholder="" cols="0" rows="10" class="contact__input">Me diga do que se trata o seu projeto...</textarea>
+                        <input type="button" value="Enviar" class="contact__button button" onclick="validar">
+                    </form>
+                  </div>                                   
+            </div>
+
+        </section>
+</main>
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="div_footer">
+               
+               <div class="footer__title div_inline">Eduardo de Araújo</div>
+               <div class="footer__social div_inline">
+                   <a href="https://www.linkedin.com/in/eduardo-d-araujo/" class="footer__icon">
+                       <i class='bx bxl-linkedin' ></i>
+                   </a>
+                   <a href="https://github.com/asurasouls" class="footer__icon">
+                       <i class='bx bxl-github' ></i>
+                   </a>
+                   <a href="https://www.facebook.com/eduardo.araujosantos.3" class="footer__icon">
+                       <i class='bx bxl-facebook' ></i>
+                   </a>
+                   
+               </div>
+           </div>
+           
+           <div class="last_footer">
+                   Made by <a href="https://github.com/asurasouls">Eduardo de Araújo</a></p>
+               <p>Todos os direitos reservados &#169; 2021</p>
+               
+           </div>
+           
+       </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+       <script src="https://unpkg.com/scrollreveal"></script>
+
+       <!--===== MAIN JS =====-->
+       <script src="./js/main.js"></script>
+
+    </body>
+</html>
